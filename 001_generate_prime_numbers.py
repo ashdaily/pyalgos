@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """Generating list of prime numbers using Sieve Eratosthene.
 
-Arguments available:
-- N : the max number until which you wish to find the list of prime numbers.
+@param :param N: the max number until which you wish to 
+	find the list of prime numbers.
+:type N: int
+@return: a list of prime numbers possible until integer N provided.
 """
 
 import argparse
@@ -32,8 +34,12 @@ class Generator:
 
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser()
-	parser.add_argument("--N",help="array size ", type=int)
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument(
+		"--N",
+		help="The max number until which you wish to find the list of prime numbers.", 
+		type=int
+	)
 	args = parser.parse_args()
 	
 	N = args.N
