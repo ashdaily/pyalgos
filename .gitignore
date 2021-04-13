@@ -1,0 +1,7 @@
+.DS_Store
+.bash_history
+.cache/
+.local/
+.vscode
+.config/
+.python_history
