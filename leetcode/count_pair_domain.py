@@ -3,7 +3,7 @@ https://leetcode.com/problems/subdomain-visit-count/submissions/
 """
 
 class Solution:
-    def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
+    def subdomainVisits(self, cpdomains: list[str]) -> list[str]:
         
         cpdomains_data = {}
         
